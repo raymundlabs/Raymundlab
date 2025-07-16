@@ -4,10 +4,11 @@
   "description": "A Node.js starter application for Deepgram's Voice Agent API",
   "main": "dist/index.js",
   "scripts": {
+    "start": "node dist/index.js",
     "build": "tsc",
-    "start": "ts-node src/index.ts",
     "test": "jest",
-    "dev": "ts-node-dev --respawn src/index.ts"
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "prepare": "npm run build"
   },
   "keywords": [
     "deepgram",

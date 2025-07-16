@@ -56,6 +56,30 @@ http://localhost:3000
 - Speak into your microphone to interact with the Deepgram Voice Agent.
 - You should hear the agent's responses played back in your browser.
 
+## Deployment
+
+### Railway Deployment
+
+1. **Prepare your repository**
+   - Make sure all your changes are committed and pushed to your Git repository
+   - Ensure your `DEEPGRAM_API_KEY` is not committed to version control (it should be in your `.env` file which is in `.gitignore`)
+
+2. **Deploy to Railway**
+   - Push your code to a GitHub repository
+   - Go to [Railway](https://railway.app/) and sign in with your GitHub account
+   - Click "New Project" and select "Deploy from GitHub repo"
+   - Select your repository
+   - Railway will automatically detect your Node.js application and start the deployment
+
+3. **Configure Environment Variables**
+   - In your Railway project, go to the "Variables" tab
+   - Add your `DEEPGRAM_API_KEY` from Deepgram Console
+   - Optionally set a custom `PORT` if needed (default is 3000)
+
+4. **Access Your Application**
+   - Once deployed, Railway will provide you with a public URL
+   - Your application should now be accessible at that URL
+
 ## Using Cursor & MDC Rules
 
 This application can be modify as needed by using the [app-requirements.mdc](.cursor/rules/app-requirements.mdc) file. This file allows you to specify various settings and parameters for the application in a structured format that can be use along with [Cursor's](https://www.cursor.com/) AI Powered Code Editor.
